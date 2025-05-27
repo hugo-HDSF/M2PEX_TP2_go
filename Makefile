@@ -31,6 +31,6 @@ demo: build ## Démonstration complète
 	@echo "\n2. Analyse basique:"
 	@./$(BINARY_NAME) analyze -c examples/config.json
 	@echo "\n3. Avec export:"
-	@./$(BINARY_NAME) analyze -c examples/config.json -o reports/2025/rapport.json
+	@./$(BINARY_NAME) analyze -c examples/config.json -o reports/2025/report.json
 
 .DEFAULT_GOAL := help

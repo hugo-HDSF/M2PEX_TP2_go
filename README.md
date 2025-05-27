@@ -25,7 +25,7 @@ make setup && make build
 ./loganalyzer analyze -c examples/config.json
 
 # Avec export JSON horodaté
-./loganalyzer analyze -c examples/config.json -o rapport.json
+./loganalyzer analyze -c examples/config.json -o reports/2025/report.json
 
 # Filtrage par statut
 ./loganalyzer analyze -c examples/config.json --status FAILED
@@ -35,6 +35,13 @@ make setup && make build
 
 # Démonstration complète
 make demo
+```
+
+## 🎬 Démonstration
+
+```bash
+make demo  # Démo complète avec tous les cas d'usage
+make help  # Liste des commandes Makefile
 ```
 
 ## 📋 Configuration JSON
@@ -99,13 +106,6 @@ func (e *FileNotFoundError) Unwrap() error { return e.Err }
 
 **Core** : Analyse concurrente, erreurs robustes, CLI intuitive, export JSON  
 **Bonus** : Horodatage auto, création répertoires, filtrage statut, ajout dynamique logs
-
-## 🎬 Démonstration
-
-```bash
-make demo  # Démo complète avec tous les cas d'usage
-make help  # Liste des commandes Makefile
-```
 
 ## 👥 Équipe
 
