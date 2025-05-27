@@ -1,0 +1,32 @@
+[
+  {
+    "id": "web-server-1",
+    "path": "test_logs/access.log",
+    "type": "nginx-access"
+  },
+  {
+    "id": "app-backend-2",
+    "path": "test_logs/errors.log",
+    "type": "custom-app"
+  },
+  {
+    "id": "db-server-3",
+    "path": "test_logs/mysql_error.log",
+    "type": "mysql-error"
+  },
+  {
+    "id": "invalid-path",
+    "path": "/non/existent/log.log",
+    "type": "generic"
+  },
+  {
+    "id": "empty-log",
+    "path": "test_logs/empty.log",
+    "type": "generic"
+  },
+  {
+    "id": "corrupted-log",
+    "path": "test_logs/corrupted.log",
+    "type": "custom-app"
+  }
+]

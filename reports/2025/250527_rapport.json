@@ -1,0 +1,44 @@
+[
+  {
+    "log_id": "invalid-path",
+    "file_path": "/non/existent/log.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable.",
+    "error_details": "fichier introuvable: /non/existent/log.log"
+  },
+  {
+    "log_id": "db-server-3",
+    "file_path": "test_logs/mysql_error.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable.",
+    "error_details": "fichier introuvable: test_logs/mysql_error.log"
+  },
+  {
+    "log_id": "corrupted-log",
+    "file_path": "test_logs/corrupted.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès.",
+    "error_details": ""
+  },
+  {
+    "log_id": "web-server-1",
+    "file_path": "test_logs/access.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès.",
+    "error_details": ""
+  },
+  {
+    "log_id": "empty-log",
+    "file_path": "test_logs/empty.log",
+    "status": "FAILED",
+    "message": "Erreur de parsing.",
+    "error_details": "erreur de parsing pour empty-log (test_logs/empty.log): format de log non reconnu"
+  },
+  {
+    "log_id": "app-backend-2",
+    "file_path": "test_logs/errors.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès.",
+    "error_details": ""
+  }
+]
